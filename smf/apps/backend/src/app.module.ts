@@ -9,10 +9,10 @@ import { PostgreSqlDriver } from '@mikro-orm/postgresql';
 @Module({
   imports: [
     MikroOrmModule.forRoot({
-      dbName: 'your-database-name',   // e.g., 'testdb'
+      dbName: 'vip_test',   // e.g., 'testdb'
       driver: PostgreSqlDriver,       // PostgreSQL type
-      user: 'your-db-user',           // Database user
-      password: 'your-db-password',   // Database password
+      user: 'postgres',           // Database user
+      password: 'admin',   // Database password
       host: 'localhost',              // Database host
       port: 5432,                     // PostgreSQL default port
       autoLoadEntities: true,         // Automatically load entities
